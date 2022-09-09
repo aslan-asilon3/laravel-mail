@@ -21,7 +21,7 @@ class SendEmail extends Mailable
     public function build()
     {
         return $this->subject('Testing Kirim Email')
-                    ->view('emails.sendemail');
+                    ->view('emails.gmail.success');
 
     }
 }
