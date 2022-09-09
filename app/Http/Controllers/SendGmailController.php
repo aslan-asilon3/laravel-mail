@@ -9,7 +9,12 @@ class SendGmailController extends Controller
 
     public function index()
     {
-        return view('emails.gmail.sendemail');
+        return view('emails.gmail.index');
+    }
+
+    public function create()
+    {
+        return view('emails.gmail.create');
     }
 
     public function send()
@@ -23,11 +28,6 @@ class SendGmailController extends Controller
         return view('emails.gmail.success');
     }
 
-
-    public function create()
-    {
-        //
-    }
 
     /**
      * Store a newly created resource in storage.
